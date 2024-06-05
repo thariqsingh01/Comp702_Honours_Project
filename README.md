@@ -95,7 +95,7 @@ Note: Screenshots of the expected output using 3 different training and test spl
    - We used GLCM, Haralick, and LBP methods, with GLCM and Haralick showing the best performance. <br>
    - We implemented three classifiers: Random Forest, K-Nearest Neighbors (KNN), and Support Vector Machine (SVM). <br> 
    - SVM was chosen as the most robust classifier based on its high accuracy and consistency. <br>
-   - The results showed that the combination of GLCM or Haralick feature extraction with SVM classification provides a reliable solution for bank note recognition. <br>
+   - The results showed that the combination of GLCM feature extraction with SVM classification provides a reliable solution for bank note recognition. <br>
    
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### **5. Conclusion:**
