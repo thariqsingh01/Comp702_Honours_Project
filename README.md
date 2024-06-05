@@ -68,7 +68,7 @@ The code is well-commented for easy understanding and modification. Experiment w
        extracted for each primary colour(Red, Green and Blue).
 
        Input: The above project uses the folder Colour_Segmentation which is the output from the Image Segmentation Process.
-       Output:The above project will output 3 csv files for each algorithm(GLCM, Haralick and LBP). Each csv file will contain<br> the features for that respective algorithm. The project will also print the features on the terminal(first GLCM, then Haralick and finall LBP), and after will print a comparison of the 3 feature extraction algorithms showing GLCM and Haralick are the better options for feature extraction
+       Output:The above project will output 3 csv files for each algorithm(GLCM, Haralick and LBP). Each csv file will contain the features for that respective algorithm. The project will also print the features on the terminal(first GLCM, then Haralick and finall LBP), and after will print a comparison of the 3 feature extraction algorithms showing GLCM and Haralick are the better options for feature extraction
 
        Requirements: Open the file feature_extraction.py. Change the paths on lines 72, 141, 214, 354, 356 to the address of your Colour Segmentation folder. Change the paths on lines 75, 144, 21 to the address of where you would like the csv files containing the features to be saved. Lines 345-357 are the addresses of each individual csv file saved from running the algorithm. Once these addresses have been changed, you can successfully run the algorithm and witness the glorius world of feature extraction. Enjoy.
 
