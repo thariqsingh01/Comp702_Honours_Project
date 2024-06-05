@@ -50,22 +50,22 @@ The code is well-commented for easy understanding and modification. Experiment w
   Data Preparation: Place the dataset(Original_Dataset.zip) of bank note images in the data/ directory and add the path of the dataset to the code for retrieval of the bank note images.
 
    #### _3.1 Image Preprocessing and Enhancement_ <br>
-       _Requirements_: Install the following libraries: os, glob, cv2, numpy, and matplotlib.pyplot <br>
-       _Preprocessing_: Run the preprocessing script to enhance and normalize the images, you will notice 3 combinations. <br>
-       _Combination 1_: Bilateral Filter, Gamma Correction, Unsharp Masking. <br>
-       _Combination 2_: Gaussian Blur, Histogram Equalization, Sharpening. <br>
-       _Combination 3_: Median Blur, CLAHE, Unsharp Masking. <br>
+_Requirements_: Install the following libraries: os, glob, cv2, numpy, and matplotlib.pyplot <br>
+_Preprocessing_: Run the preprocessing script to enhance and normalize the images, you will notice 3 combinations. <br>
+_Combination 1_: Bilateral Filter, Gamma Correction, Unsharp Masking. <br>
+_Combination 2_: Gaussian Blur, Histogram Equalization, Sharpening. <br>
+_Combination 3_: Median Blur, CLAHE, Unsharp Masking. <br>
 
    #### _3.2 Image Segmentation_ <br>
-       _Requirements_: Ensure you have various libraries such as OpenCv and sci-kit learn installed, the specific library names can be found in the individual python scripts.<br>
+_Requirements_: Ensure you have various libraries such as OpenCv and sci-kit learn installed, the specific library names can be found in the individual python scripts.<br>
        This project contains 5 python scrips which explores techniques like: Binarization (Otsu's thresholding, etc.) using the Segmentation.py file Canny Edge Segmentation using the Canny_Edge.py file Adaptive Thresholding using the New_Techniques.py file Clustering Algorithms (K-means) using the Techniques_Segmentation.py file Colour Segmentation using the ColorSegmentation.py file <br>
-       _Input_: The above project makes use of the Dataset_preprocess folder to segment images. <br>
-       _Output_: The above project creates a folder Colour_Segmentation which contains all segmented images to be used as input to Feature Extraction. <br>
+_Input_: The above project makes use of the Dataset_preprocess folder to segment images. <br>
+_Output_: The above project creates a folder Colour_Segmentation which contains all segmented images to be used as input to Feature Extraction. <br>
   
    #### _3.3 Feature Extraction_ <br>
-       Feature Extraction.zip: Extracts key features from segmented images for classification. This script investigates features like:
-       Contrast, Dissimilarity,Homogeneity, ASM, Energy and Correlation for 3 different algortithms. These algorithms are GLCM, Haralick and LBP. Since we are working with colour images, the features are 
-       extracted for each primary colour(Red, Green and Blue).
+Feature Extraction.zip: Extracts key features from segmented images for classification. This script investigates features like:
+Contrast, Dissimilarity,Homogeneity, ASM, Energy and Correlation for 3 different algortithms. These algorithms are GLCM, Haralick and LBP. Since we are working with colour images, the features are 
+extracted for each primary colour(Red, Green and Blue).
 
 _Input_: The above project uses the folder Colour_Segmentation which is the output from the Image Segmentation Process <br>
 _Output_:The above project will output 3 csv files for each algorithm(GLCM, Haralick and LBP). Each csv file will contain the features for that respective algorithm. The project will also print the features on the terminal(first GLCM, then Haralick and finall LBP), and after will print a comparison of the 3 feature extraction algorithms showing GLCM and Haralick are the better options for feature extraction
