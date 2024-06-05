@@ -49,33 +49,33 @@ The code is well-commented for easy understanding and modification. Experiment w
 
   Data Preparation: Place the dataset(Original_Dataset.zip) of bank note images in the data/ directory and add the path of the dataset to the code for retrieval of the bank note images.
 
-   ###_3.1 Image Preprocessing and Enhancement_ <br>
+   #### _3.1 Image Preprocessing and Enhancement_ <br>
        _Requirements_: Install the following libraries: os, glob, cv2, numpy, and matplotlib.pyplot <br>
        _Preprocessing_: Run the preprocessing script to enhance and normalize the images, you will notice 3 combinations. <br>
        _Combination 1_: Bilateral Filter, Gamma Correction, Unsharp Masking. <br>
        _Combination 2_: Gaussian Blur, Histogram Equalization, Sharpening. <br>
        _Combination 3_: Median Blur, CLAHE, Unsharp Masking. <br>
 
-   _3.2 Image Segmentation_ <br>
-       Requirements: Ensure you have various libraries such as OpenCv and sci-kit learn installed, the specific library names can be found in the individual python scripts.<br>
+   #### _3.2 Image Segmentation_ <br>
+       _Requirements_: Ensure you have various libraries such as OpenCv and sci-kit learn installed, the specific library names can be found in the individual python scripts.<br>
        This project contains 5 python scrips which explores techniques like: Binarization (Otsu's thresholding, etc.) using the Segmentation.py file Canny Edge Segmentation using the Canny_Edge.py file Adaptive Thresholding using the New_Techniques.py file Clustering Algorithms (K-means) using the Techniques_Segmentation.py file Colour Segmentation using the ColorSegmentation.py file <br>
-       Input: The above project makes use of the Dataset_preprocess folder to segment images. <br>
-       Output: The above project creates a folder Colour_Segmentation which contains all segmented images to be used as input to Feature Extraction. <br>
+       _Input_: The above project makes use of the Dataset_preprocess folder to segment images. <br>
+       _Output_: The above project creates a folder Colour_Segmentation which contains all segmented images to be used as input to Feature Extraction. <br>
   
-   _3.3 Feature Extraction_ <br>
+   #### _3.3 Feature Extraction_ <br>
        Feature Extraction.zip: Extracts key features from segmented images for classification. This script investigates features like:
        Contrast, Dissimilarity,Homogeneity, ASM, Energy and Correlation for 3 different algortithms. These algorithms are GLCM, Haralick and LBP. Since we are working with colour images, the features are 
        extracted for each primary colour(Red, Green and Blue).
 
-Input: The above project uses the folder Colour_Segmentation which is the output from the Image Segmentation Process <br>
-Output:The above project will output 3 csv files for each algorithm(GLCM, Haralick and LBP). Each csv file will contain the features for that respective algorithm. The project will also print the features on the terminal(first GLCM, then Haralick and finall LBP), and after will print a comparison of the 3 feature extraction algorithms showing GLCM and Haralick are the better options for feature extraction
+_Input_: The above project uses the folder Colour_Segmentation which is the output from the Image Segmentation Process <br>
+_Output_:The above project will output 3 csv files for each algorithm(GLCM, Haralick and LBP). Each csv file will contain the features for that respective algorithm. The project will also print the features on the terminal(first GLCM, then Haralick and finall LBP), and after will print a comparison of the 3 feature extraction algorithms showing GLCM and Haralick are the better options for feature extraction
 
-Requirements: Open the file feature_extraction.py. Change the paths on lines 72, 141, 214, 354, 356 to the address of your Colour Segmentation folder. Change the paths on lines 75, 144, 21 to the address of where you would like the csv files containing the features to be saved. Lines 345-357 are the addresses of each individual csv file saved from running the algorithm. Once these addresses have been changed, you can successfully run the algorithm and witness the glorius world of feature extraction. Enjoy.
+_Requirements_: Open the file feature_extraction.py. Change the paths on lines 72, 141, 214, 354, 356 to the address of your Colour Segmentation folder. Change the paths on lines 75, 144, 21 to the address of where you would like the csv files containing the features to be saved. Lines 345-357 are the addresses of each individual csv file saved from running the algorithm. Once these addresses have been changed, you can successfully run the algorithm and witness the glorius world of feature extraction. Enjoy.
 
-   _3.4 Notes Classification_ <br>
-Requirements: Ensure you have the libraries such as os, re, numpy, pandas, and scikit-learn installed. Paths need to be changed before running it, according to the location of your folders.<br>
+  #### _3.4 Notes Classification_ <br>
+_Requirements_: Ensure you have the libraries such as os, re, numpy, pandas, and scikit-learn installed. Paths need to be changed before running it, according to the location of your folders.<br>
 
-Description: This project contains a Python script that explores 3 classification techniques using image data<br>
+_Description_: This project contains a Python script that explores 3 classification techniques using image data<br>
  - Random Forest Classifier<br>
  - K-Nearest Neighbours Classifier<br>
  - Support Vector Machine Classifier<br>
