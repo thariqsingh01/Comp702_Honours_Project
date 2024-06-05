@@ -76,9 +76,9 @@ Requirements: Open the file feature_extraction.py. Change the paths on lines 72,
 Requirements: Ensure you have the libraries such as os, re, numpy, pandas, and scikit-learn installed. Paths need to be changed before running it, according to the location of your folders.<br>
 
 Description: This project contains a Python script that explores 3 classification techniques using image data<br>
-•	Random Forest Classifier<br>
-•	K-Nearest Neighbours Classifier<br>
-•	Support Vector Machine Classifier<br>
+ - Random Forest Classifier<br>
+ - K-Nearest Neighbours Classifier<br>
+ - Support Vector Machine Classifier<br>
 
 The script uses the Colour_Segmented_Images directory and glcm_features.csv file to segment and extract features from the images. It outputs accuracy scores, classification reports, and confusion matrices for each classifier.<br>
 
