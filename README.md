@@ -49,12 +49,12 @@ The code is well-commented for easy understanding and modification. Experiment w
 
   Data Preparation: Place the dataset(Original_Dataset.zip) of bank note images in the data/ directory and add the path of the dataset to the code for retrieval of the bank note images.
 
-   _3.1 Image Preprocessing and Enhancement_ <br>
-       Requirements: Install the following libraries: os, glob, cv2, numpy, and matplotlib.pyplot <br>
-       Preprocessing: Run the preprocessing script to enhance and normalize the images, you will notice 3 combinations. <br>
-       Combination 1: Bilateral Filter, Gamma Correction, Unsharp Masking. <br>
-       Combination 2: Gaussian Blur, Histogram Equalization, Sharpening. <br>
-       Combination 3: Median Blur, CLAHE, Unsharp Masking. <br>
+   ###_3.1 Image Preprocessing and Enhancement_ <br>
+       _Requirements_: Install the following libraries: os, glob, cv2, numpy, and matplotlib.pyplot <br>
+       _Preprocessing_: Run the preprocessing script to enhance and normalize the images, you will notice 3 combinations. <br>
+       _Combination 1_: Bilateral Filter, Gamma Correction, Unsharp Masking. <br>
+       _Combination 2_: Gaussian Blur, Histogram Equalization, Sharpening. <br>
+       _Combination 3_: Median Blur, CLAHE, Unsharp Masking. <br>
 
    _3.2 Image Segmentation_ <br>
        Requirements: Ensure you have various libraries such as OpenCv and sci-kit learn installed, the specific library names can be found in the individual python scripts.<br>
