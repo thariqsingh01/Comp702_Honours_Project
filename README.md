@@ -73,7 +73,7 @@ Output:The above project will output 3 csv files for each algorithm(GLCM, Harali
 Requirements: Open the file feature_extraction.py. Change the paths on lines 72, 141, 214, 354, 356 to the address of your Colour Segmentation folder. Change the paths on lines 75, 144, 21 to the address of where you would like the csv files containing the features to be saved. Lines 345-357 are the addresses of each individual csv file saved from running the algorithm. Once these addresses have been changed, you can successfully run the algorithm and witness the glorius world of feature extraction. Enjoy.
 
    _3.4 Notes Classification_ <br>
-Requirements: Ensure you have the libraries such as os, re, numpy, pandas, and scikit-learn installed. Paths need to be changed before running it,according to the location of your folders.<br>
+Requirements: Ensure you have the libraries such as os, re, numpy, pandas, and scikit-learn installed. Paths need to be changed before running it, according to the location of your folders.<br>
 
 Description: This project contains a Python script that explores 3 classification techniques using image data<br>
 •	Random Forest Classifier<br>
@@ -81,6 +81,7 @@ Description: This project contains a Python script that explores 3 classificatio
 •	Support Vector Machine Classifier<br>
 
 The script uses the Colour_Segmented_Images directory and glcm_features.csv file to segment and extract features from the images. It outputs accuracy scores, classification reports, and confusion matrices for each classifier.<br>
+
 Note: Screenshots of the expected output using 3 different training and test split ratios are available.  
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
